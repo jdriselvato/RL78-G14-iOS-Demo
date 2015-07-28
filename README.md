@@ -7,7 +7,7 @@ This app allows you to stream the following from/to RL78/G14:
 * Tilt (X,Y,Z)
 * Send Beep
 
-All communication is done via dweet.io
+All communication is done via http://dweet.io
 
 # How to use
 In Model.swift change line 12
