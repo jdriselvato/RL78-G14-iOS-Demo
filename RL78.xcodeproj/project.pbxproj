@@ -15,8 +15,8 @@
 		30D406301B67CFFD00AF360F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4062F1B67CFFD00AF360F /* ViewModel.swift */; };
 		30D406321B67D00200AF360F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D406311B67D00200AF360F /* Model.swift */; };
 		30D406341B67D00A00AF360F /* DweetObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D406331B67D00A00AF360F /* DweetObject.swift */; };
-		30D4063A1B67D03D00AF360F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D406361B67D03D00AF360F /* Global.swift */; };
 		30D4063B1B67D03D00AF360F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D406371B67D03D00AF360F /* SwiftyJSON.swift */; };
+		30E3A09A1C8745D6003CB748 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3A0991C8745D6003CB748 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		30D4062F1B67CFFD00AF360F /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		30D406311B67D00200AF360F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		30D406331B67D00A00AF360F /* DweetObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DweetObject.swift; sourceTree = "<group>"; };
-		30D406361B67D03D00AF360F /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = ../../rn78/rn78/Global.swift; sourceTree = "<group>"; };
-		30D406371B67D03D00AF360F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../../rn78/rn78/SwiftyJSON.swift; sourceTree = "<group>"; };
+		30D406371B67D03D00AF360F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		30E3A0991C8745D6003CB748 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		30D406351B67D03300AF360F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				30D406361B67D03D00AF360F /* Global.swift */,
 				30D406371B67D03D00AF360F /* SwiftyJSON.swift */,
+				30E3A0991C8745D6003CB748 /* Global.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -176,7 +176,8 @@
 		30D406021B67CF9D00AF360F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Flare Labs";
 				TargetAttributes = {
 					30D406091B67CF9D00AF360F = {
@@ -233,11 +234,11 @@
 			files = (
 				30D406121B67CF9D00AF360F /* ViewController.swift in Sources */,
 				30D406301B67CFFD00AF360F /* ViewModel.swift in Sources */,
-				30D4063A1B67D03D00AF360F /* Global.swift in Sources */,
 				30D406101B67CF9D00AF360F /* AppDelegate.swift in Sources */,
 				30D406321B67D00200AF360F /* Model.swift in Sources */,
 				30D4063B1B67D03D00AF360F /* SwiftyJSON.swift in Sources */,
 				30D406341B67D00A00AF360F /* DweetObject.swift in Sources */,
+				30E3A09A1C8745D6003CB748 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +293,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -360,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RL78/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "unknown.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -370,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RL78/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "unknown.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -388,6 +392,7 @@
 				);
 				INFOPLIST_FILE = RL78Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flare-Labs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RL78.app/RL78";
 			};
@@ -403,6 +408,7 @@
 				);
 				INFOPLIST_FILE = RL78Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flare-Labs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RL78.app/RL78";
 			};
@@ -427,6 +433,7 @@
 				30D4062B1B67CF9D00AF360F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30D4062C1B67CF9D00AF360F /* Build configuration list for PBXNativeTarget "RL78Tests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +442,7 @@
 				30D4062E1B67CF9D00AF360F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

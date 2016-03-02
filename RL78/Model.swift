@@ -26,7 +26,7 @@ class Model: NSObject, NSURLConnectionDataDelegate {
         self.connection = NSURLConnection(request: request, delegate: self)    }
     
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
-        let json = JSON(data: data, options: nil, error: nil) //NSASCIIStringEncoding
+        let json = JSON(data: data, options: .AllowFragments, error: nil) //
         
         self.dweetObject.value = DweetObject.dweet(json) //Observed object changed
     }
@@ -36,6 +36,6 @@ class Model: NSObject, NSURLConnectionDataDelegate {
     }
     
     func connection(connection: NSURLConnection, didFailWithError error: NSError) {
-        println("ERROR: \(error)")
+        print("ERROR: \(error)")
     }
 }

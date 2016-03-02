@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UITableViewController {
     var viewModel: ViewModel
     
     var dweetObject: DweetObject = DweetObject.emptyDweet() // Empty so we can still display an empty VC

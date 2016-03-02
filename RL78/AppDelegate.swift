@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.viewModel = ViewModel(model: self.model!)
         self.viewController = ViewController(viewModel: self.viewModel!)
         
-        var navigationBar = UINavigationController(rootViewController: self.viewController!)
+        let navigationBar = UINavigationController(rootViewController: self.viewController!)
         
         self.window = ({
             let window = UIWindow(frame: UIScreen.mainScreen().bounds)
